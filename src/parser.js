@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const source = require('./source');
 
-const outputData = path.join(__dirname, 'emoji-data.json');
-const outputNames = path.join(__dirname, 'emoji-names.json');
+const outputData = path.join(__dirname, '..', 'json', 'emoji-data.json');
+const outputNames = path.join(__dirname, '..', 'json', 'emoji-names.json');
 
 // Helper Function
 function writeToFile(input, file) {

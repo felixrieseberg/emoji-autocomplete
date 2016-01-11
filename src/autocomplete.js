@@ -1,5 +1,6 @@
 "use strict";
 
+const Emoji   = require('./emoji');
 const data    = require('./emoji-data.json');
 const complex = require('./emoji-complex.json');
 const names   = require('./emoji-names.json');
@@ -7,26 +8,31 @@ const names   = require('./emoji-names.json');
 function _simpleMatch(input) {
     let pattern = `^(${input})|[_](${input})`;
     let rx = new RegExp(pattern);
-    let output = [];
+    let outputStrings = [];
+    let outputEmoji = [];
     
     for (let name of names) {
-        if (rx.test(name)) output.push(name);
+        if (rx.test(name)) outputStrings.push(name);
     }
     
-    return output;
+    outputStrings.forEach((em) => outputEmoji.push(_simpleEmoji(em)));
+    
+    return outputEmoji;
 }
 
 function _complexMatch(input) {
     let pattern = `^(${input})|[_](${input})`;
     let rx = new RegExp(pattern);
-    let output = [];
+    let outputStrings = [];
+    let outputEmoji = [];
     
     Object.keys(complex).forEach((key, index) => {
-        if (rx.test(key)) output.push(key);
-        console.log(key);
+        if (rx.test(key)) outputStrings.push(key);
     });
     
-    return output;
+    outputStrings.forEach((em) => outputEmoji.push(_complexEmoji(em)));
+    
+    return outputEmoji;
 }
 
 function match(input) {
@@ -37,8 +43,35 @@ function match(input) {
     return output;
 }
 
-function emoji(input) {
-    return data[input];
+function _simpleEmoji(input) {
+    const em = data[input];
+    
+    if (em) {
+        return new Emoji.Emoji(input, em);
+    } else {
+        return null;
+    }
+}
+
+function _complexEmoji(input) {
+    let content = [];
+    let contentEmoji = '';
+    let contentStrings = complex[input];
+    
+    // Not found
+    if (!contentStrings) {
+        return null
+    };
+    
+    contentStrings.forEach((element) => {
+        let elementEmoji = _simpleEmoji(element);
+        if (elementEmoji) {
+            content.push(elementEmoji)
+            contentEmoji += elementEmoji.emoji;
+        };
+    });
+    
+    return new Emoji.ComplexEmoji(input, contentEmoji, content);
 }
 
 module.exports = { match };

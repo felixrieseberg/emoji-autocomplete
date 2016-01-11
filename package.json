@@ -1,0 +1,32 @@
+{
+  "name": "emoji-autocomplete",
+  "version": "0.1.0",
+  "description": "Autocomplete words into emojis (turn \"rent\" into \":house: :money_with_wings:\")",
+  "main": "lib/autocomplete.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parse": "node ./src/parser.js",
+    "search": "node ./cli.js",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixrieseberg/emoji-autocomplete.git"
+  },
+  "keywords": [
+    "emoji",
+    "autocomplete",
+    "translate",
+    "translator"
+  ],
+  "author": "Felix Rieseberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felixrieseberg/emoji-autocomplete/issues"
+  },
+  "homepage": "https://github.com/felixrieseberg/emoji-autocomplete#readme",
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
