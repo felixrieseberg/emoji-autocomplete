@@ -1,12 +1,17 @@
 "use strict";
 
 const Emoji   = require('./emoji');
-const data    = require('./emoji-data.json');
-const complex = require('./emoji-complex.json');
-const names   = require('./emoji-names.json');
+const data    = require('../json/emoji-data.json');
+const complex = require('../json/emoji-complex.json');
+const names   = require('../json/emoji-names.json');
+
+function _escapeRegExp(str) {
+    return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
+}
 
 function _simpleMatch(input) {
-    let pattern = `^(${input})|[_](${input})`;
+    let escapedInput = _escapeRegExp(input);
+    let pattern = `^(${escapedInput})|[_](${escapedInput})`;
     let rx = new RegExp(pattern);
     let outputStrings = [];
     let outputEmoji = [];
@@ -21,7 +26,8 @@ function _simpleMatch(input) {
 }
 
 function _complexMatch(input) {
-    let pattern = `^(${input})|[_](${input})`;
+    let escapedInput = _escapeRegExp(input);
+    let pattern = `^(${escapedInput})|[_](${escapedInput})`;
     let rx = new RegExp(pattern);
     let outputStrings = [];
     let outputEmoji = [];

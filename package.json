@@ -4,7 +4,7 @@
   "description": "Autocomplete words into emojis (turn \"rent\" into \":house: :money_with_wings:\")",
   "main": "lib/autocomplete.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./tests/runner.js",
     "parse": "node ./src/parser.js",
     "search": "node ./cli.js",
     "build": "babel src -d lib"
@@ -27,6 +27,9 @@
   "homepage": "https://github.com/felixrieseberg/emoji-autocomplete#readme",
   "devDependencies": {
     "babel-cli": "^6.0.0",
-    "babel-preset-es2015": "^6.3.13"
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.4.1",
+    "glob": "^6.0.4",
+    "mocha": "^2.3.4"
   }
 }
