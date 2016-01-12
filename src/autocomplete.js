@@ -42,6 +42,7 @@ function _complexMatch(input) {
 }
 
 function match(input) {
+    input = input.toLowerCase();
     let simple = _simpleMatch(input);
     let complex = _complexMatch(input);
     let output = simple.concat(complex);
