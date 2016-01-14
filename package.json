@@ -5,8 +5,9 @@
   "main": "lib/autocomplete.js",
   "scripts": {
     "test": "node ./tests/runner.js",
-    "parse": "node ./src/parser.js",
-    "search": "node ./cli.js",
+    "parse": "node ./tools/parse.js",
+    "search": "node ./tools/cli.js",
+    "add": "node ./tools/add.js",
     "build": "babel src -d lib"
   },
   "repository": {

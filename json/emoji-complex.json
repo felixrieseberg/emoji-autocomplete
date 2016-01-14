@@ -1,3 +1,261 @@
 {
-    "rent": ["house", "money_with_wings"]
+    "rent": [
+        "house",
+        "money_with_wings"
+    ],
+    "trophy_wife": [
+        "trophy",
+        "bride_with_veil"
+    ],
+    "anger_management": [
+        "rage",
+        "bar_chart"
+    ],
+    "arabian_night": [
+        "man_with_turban",
+        "first_quarter_moon_with_face"
+    ],
+    "arm_wrestle": [
+        "muscle",
+        "vs",
+        "muscle"
+    ],
+    "autobahn": [
+        "car",
+        "taxi",
+        "articulated_lorry"
+    ],
+    "azn": [
+        "rice",
+        "ramen",
+        "kissing_smiling_eyes"
+    ],
+    "baby_shower": [
+        "baby",
+        "shower"
+    ],
+    "back_in_action": [
+        "back",
+        "rage",
+        "facepunch"
+    ],
+    "be_cool": [
+        "bee",
+        "sunglasses"
+    ],
+    "bad_trip": [
+        "boy",
+        "mushroom",
+        "japanese_ogre"
+    ],
+    "baltimore": [
+        "oncoming_automobile",
+        "fire",
+        "gun",
+        "cop",
+        "boom"
+    ],
+    "bible_thumper": [
+        "pray",
+        "notebook_with_decorative_cover",
+        "hammer"
+    ],
+    "birthday_present": [
+        "tada",
+        "gift"
+    ],
+    "booty_call": [
+        "boy",
+        "iphone",
+        "girl",
+        "couplekiss",
+        "boom"
+    ],
+    "bobs_burgers": [
+        "man",
+        "hamburger"
+    ],
+    "bye": [
+        "hand",
+        "unamused"
+    ],
+    "bye_felica": [
+        "wave",
+        "woman"
+    ],
+    "butt_kicking": [
+        "athletic_shoe",
+        "peach"
+    ],
+    "busy_bee": [
+        "sweat",
+        "bee"
+    ],
+    "christmas": [
+        "santa",
+        "christmas_tree",
+        "gift"
+    ],
+    "cider": [
+        "green_apple",
+        "beer"
+    ],
+    "cookie_monster": [
+        "cookie",
+        "japanese_ogre"
+    ],
+    "computer_nerd": [
+        "computer",
+        "boy"
+    ],
+    "computer_time": [
+        "computer",
+        "alarm_clock"
+    ],
+    "cool_bananas": [
+        "sunglasses",
+        "banana",
+        "banana"
+    ],
+    "cry_baby": [
+        "sleepy",
+        "baby"
+    ],
+    "craft_beer": [
+        "wrench",
+        "hammer",
+        "beer"
+    ],
+    "cow_fart": [
+        "cow2",
+        "dash"
+    ],
+    "car_alarm": [
+        "oncoming_automobile",
+        "bell"
+    ],
+    "desert_rose": [
+        "cactus",
+        "rose"
+    ],
+    "diamond_in_the_sky": [
+        "gem",
+        "milky_way"
+    ],
+    "dinner_party": [
+        "stew",
+        "tada"
+    ],
+    "door_unlocked": [
+        "door",
+        "unlock"
+    ],
+    "drugs": [
+        "pill"
+    ],
+    "drama_queen": [
+        "performing_arts",
+        "crown"
+    ],
+    "double_rainbow": [
+        "rainbow",
+        "rainbow"
+    ],
+    "dog_house": [
+        "dog",
+        "house"
+    ],
+    "easter_time": [
+        "hatched_chick",
+        "rabbit",
+        "cherry_blossom"
+    ],
+    "eggs_bacon": [
+        "egg",
+        "pig"
+    ],
+    "eligible_bachelor": [
+        "dollar",
+        "car",
+        "boy"
+    ],
+    "elon_musk": [
+        "boy",
+        "oncoming_automobile",
+        "rocket"
+    ],
+    "eyeball": [
+        "eyes",
+        "basketball"
+    ],
+    "face_punch": [
+        "confounded",
+        "facepunch"
+    ],
+    "face_time": [
+        "smiley",
+        "clock1130"
+    ],
+    "facebook": [
+        "smiley",
+        "blue_book"
+    ],
+    "farm": [
+        "rooster",
+        "pig2",
+        "cow2",
+        "goat"
+    ],
+    "fight_club": [
+        "muscle",
+        "facepunch",
+        "busts_in_silhouette",
+        "boom",
+        "anger"
+    ],
+    "fish": [
+        "tropical_fish",
+        "fish",
+        "dolphin"
+    ],
+    "fish_chips": [
+        "fish",
+        "fries"
+    ],
+    "flower_girl": [
+        "cherry_blossom",
+        "girl"
+    ],
+    "food": [
+        "spaghetti",
+        "curry",
+        "rice",
+        "ramen",
+        "stew"
+    ],
+    "fried_chicken": [
+        "fire",
+        "chicken"
+    ],
+    "friday_night": [
+        "beers",
+        "milky_way"
+    ],
+    "freebie": [
+        "free",
+        "bee"
+    ],
+    "free_hugs": [
+        "free",
+        "couplekiss"
+    ],
+    "fire_extinguisher": [
+        "dash",
+        "fire"
+    ],
+    "game_thrones": [
+        "video_game",
+        "crown",
+        "skull"
+    ]
 }

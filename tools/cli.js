@@ -3,9 +3,12 @@
  * root of the module with `npm run search {searchterm}` - try running `npm run search re`
  * to display all the matches for "re".
  */
-const autocomplete = require('./src/autocomplete');
+const autocomplete = require('../src/autocomplete');
 
 const userArgs = process.argv.slice(2);
 const searchParam = userArgs[0];
 
+console.log('Character Search Results:');
 console.log(autocomplete.match(searchParam));
+console.log('Emoji Search Results:');
+console.log(autocomplete.name(searchParam));

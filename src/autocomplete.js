@@ -33,7 +33,9 @@ function _complexMatch(input) {
     let outputEmoji = [];
     
     Object.keys(complex).forEach((key, index) => {
-        if (rx.test(key)) outputStrings.push(key);
+        if (rx.test(key)) {
+            outputStrings.push(key);
+        }
     });
     
     outputStrings.forEach((em) => outputEmoji.push(_complexEmoji(em)));
@@ -46,6 +48,18 @@ function match(input) {
     let simple = _simpleMatch(input);
     let complex = _complexMatch(input);
     let output = simple.concat(complex);
+    
+    return output;
+}
+
+function name(input) {
+    let output;
+
+    Object.keys(data).forEach((key, index) => {
+        if (data[key] === input) {
+            output = new Emoji.Emoji(key, data[key]);
+        }
+    });
     
     return output;
 }
@@ -81,4 +95,4 @@ function _complexEmoji(input) {
     return new Emoji.ComplexEmoji(input, contentEmoji, content);
 }
 
-module.exports = { match };
+module.exports = { match, name };
