@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const fs = require('fs');
 const path = require('path');
@@ -18,7 +18,7 @@ function writeToFile(input, file) {
             }
         });
     });
-};
+}
 
 let data = {};
 let names = [];

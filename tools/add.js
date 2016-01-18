@@ -1,10 +1,9 @@
-"use strict";
+'use strict';
 
 const fs           = require('fs');
 const path         = require('path');
 const complex      = require('../json/emoji-complex.json');
 const autocomplete = require('../src/autocomplete');
-const Emoji        = require('../src/Emoji');
 
 const userArgs     = process.argv.slice(2);
 const newName      = userArgs[0];
@@ -19,12 +18,12 @@ function getNames(input) {
 
     for (let i = 0; i < split.length; i++) {
         let char = split[i];
-        if (char !== "") {
+        if (char !== '') {
             let currentName = autocomplete.name(char).name;
             names.push(currentName);
         }
     }
-    
+
     return names;
 }
 
@@ -38,35 +37,34 @@ function writeToFile(input, file) {
             }
         });
     });
-};
+}
 
 function appendNewComplex(name, emojiNames) {
     let clonedData = {};
-    
+
     if (complex[name] !== undefined) {
-        return;
+        return clonedData;
     }
-    
+
     for (let key in complex) {
         if (complex.hasOwnProperty(key)) {
             clonedData[key] = complex[key];
         }
     }
-    
+
     clonedData[name] = emojiNames;
-    
+
     return clonedData;
 }
 
 if (newName && newEmojis) {
     let newNames = getNames(newEmojis);
     let newData = appendNewComplex(newName, newNames);
-    
-    
+
+
     writeToFile(newData, outputData).then(() => {
         console.log(`${newName} with sub-emoji ${newNames} added`);
     });
 } else {
     console.log('Insufficient parameters! Usage: npm run add {name} {emojis}');
 }
-

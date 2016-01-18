@@ -1,3 +1,6 @@
+/*eslint-disable */
+'use strict';
+
 const emoji = {
     "00a9":[["\u00A9\uFE0F","\u00A9"],"\uE24E","\uDBBA\uDF29",["copyright"],0,0,11,0],
     "00ae":[["\u00AE\uFE0F","\u00AE"],"\uE24F","\uDBBA\uDF2D",["registered"],0,1,11,0],
@@ -1283,3 +1286,5 @@ const emoji = {
 };
 
 module.exports = emoji;
+
+/*eslint-enable */
