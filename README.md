@@ -53,5 +53,13 @@ Emoji {
 }
 ```
 
+## CLI Tools
+This script comes with a few CLI tools for developers:
+
+ * `npm run search SEARCHTERM` - Search for an Emoji
+ * `npm run add NAME EMOJI` - Add a new Emoji Combination
+ * `npm run test` - Run Unit Tests
+ * `npm run parse` - Execute the Parser, turning `source.js` into the JSON-file used by this package
+
 ### License
 MIT. For details, please consult `LICENSE`.

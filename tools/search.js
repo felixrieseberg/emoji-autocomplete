@@ -16,12 +16,12 @@ const name = autocomplete.name(searchParam);
 
 if (match && match.length > 0) {
     console.log('Match Results:');
-    console.log(util.inspect(match, {showHidden: false, depth: null}));
+    console.log(util.inspect(match, { showHidden: false, depth: null }));
 }
 
 if (name) {
     console.log('Name Results:');
-    console.log(name); 
+    console.log(name);
 }
 
 if ((!match || match.length < 1) && (!name || name.length < 1)) {
