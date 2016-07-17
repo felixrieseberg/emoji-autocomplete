@@ -1,6 +1,6 @@
 {
   "name": "emoji-autocomplete",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Autocomplete words into emojis (turn \"rent\" into \":house: :money_with_wings:\")",
   "main": "lib/autocomplete.js",
   "scripts": {
